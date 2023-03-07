@@ -1,5 +1,5 @@
-var CACHE_STATIC_NAME = 'static-v1.0.3';
-var CACHE_DYNAMIC_NAME ='dynamic-v1.0.3';
+var CACHE_STATIC_NAME = 'static-v1.0.4';
+var CACHE_DYNAMIC_NAME ='dynamic-v1.0.4';
 
 self.addEventListener('install', function(event){
     console.log('[Service Worker] Install Service Worker', event);
@@ -22,8 +22,6 @@ self.addEventListener('install', function(event){
                 './src/components/Header.jsx',
                 './src/components/Nav.jsx',
                 './src/components/Timer.jsx',
-                './src/components/InstallPWA.jsx',
-                './src/components/InstallAndroid.jsx',
                 './src/components/CardPWA.jsx',
             ]);
         })
