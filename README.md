@@ -24,4 +24,4 @@
 
 📨 In-app notification!
 
-📐 Available in portrait & landscape mode!
+📐 Available in portrait & landscape mode!!
