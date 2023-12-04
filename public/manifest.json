@@ -1,0 +1,91 @@
+{
+  "name": "Space Out Cat",
+  "short_name": "SOC",
+  "start_url": "/login",
+  "display": "standalone",
+  "description": "A self-care app with a space & cat theme",
+  "lang": "en",
+  "dir": "auto",
+  "theme_color": "#171717",
+  "background_color": "#171717",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "manifest-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "manifest-icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "manifest-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "manifest-icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+        "src": "/screenshots/1.jpg",
+        "sizes": "1080x1920",
+        "type": "image/jpg",
+        "platform": "android, chromeos, windows, macos, kaios"
+    },
+    {
+        "src": "/screenshots/2.jpg",
+        "sizes": "1080x1920",
+        "type": "image/jpg",
+        "platform": "android, chromeos, windows, macos, kaios"
+    }
+  ],
+
+  "shortcuts": [
+    {
+        "name": "Mindfulness",
+        "url": "/mindfulness",
+        "icons": [
+          {
+             "src": "/icons/IconMindful.png",
+             "sizes": "96x96",
+             "type": "image/png",
+             "purpose": "any"
+          }
+       ]
+    },
+    {
+        "name": "Health Tracker",
+        "url": "/health-tracker",
+        "icons": [
+          {
+             "src": "/icons/IconMoodTracker.png",
+             "sizes": "96x96",
+             "type": "image/png",
+             "purpose": "any"
+          }
+       ]
+    },
+    {
+        "name": "Sleep Sounds",
+        "url": "/sleep-sounds",
+        "icons": [
+          {
+             "src": "/icons/IconSleepSounds.png",
+             "sizes": "96x96",
+             "type": "image/png",
+             "purpose": "any"
+          }
+       ]
+    }
+  ]
+}
