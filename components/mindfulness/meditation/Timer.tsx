@@ -56,17 +56,23 @@ export default function Timer() {
   return (
     <>
       <p className="time">
-        <span id="minutes">{minutes.toString().padStart(2, '0')}</span>:
-        <span id="seconds">{seconds.toString().padStart(2, '0')}</span>:
-        <span id="tens">{tens.toString().padStart(2, '0')}</span>
+        <span id="minutes" data-testid="minutes" >{minutes.toString().padStart(2, '0')}</span>:
+        <span id="seconds" data-testid="seconds">{seconds.toString().padStart(2, '0')}</span>:
+        <span id="tens" data-testid="tens">{tens.toString().padStart(2, '0')}</span>
       </p>
-      <button className="mx-3 hover:opacity-50 duration-150" onClick={handleStart}>
+
+      <button className="mx-3 hover:opacity-50 duration-150" onClick={handleStart}
+      data-testid="play">
         <FaPlay color="#ba68c8" size="2em" />
       </button>
-      <button className="mx-3 hover:opacity-50 duration-150" onClick={handleStop}>
+
+      <button className="mx-3 hover:opacity-50 duration-150" onClick={handleStop}
+      data-testid="pause">
         <FaPause color="#cdcdcd" size="2em" />
       </button>
-      <button className="mx-3 hover:opacity-50 duration-150" onClick={handleReset}>
+
+      <button className="mx-3 hover:opacity-50 duration-150" onClick={handleReset}
+        data-testid="backward">
         <FaBackward color="#ba68c8" size="2em" />
       </button>
     </>

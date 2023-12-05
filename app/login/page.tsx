@@ -31,9 +31,10 @@ const LogIn = () => {
       <div className="lg:flex lg:justify-center lg:items-center">
         <div className="p-4 lg:w-1/2">
           <div className="text-center text-primary">
-            <h1 className="text-4xl font-black md:mt-20 lg:mt-0">SPACE OUT CAT</h1>
+            <h1 className="text-4xl font-black md:mt-80 lg:mt-0">SPACE OUT CAT</h1>
           </div>
           <div className="flex flex-col items-center mt-10">
+           
             <button
               className="flex gap-2 px-4 py-2 mb-5 rounded-lg border-slate-200 bg-slate-200 text-slate-700 hover:bg-slate-300"
               onClick={() => signInWithGoogle(router)}
