@@ -15,7 +15,7 @@ export default function Avatar() {
         setDisplayName(user.displayName);
         setLoading(false); // Update the loading state once the displayName is fetched
       } else {
-        setLoading(false); // Update the loading state even when there's no user
+        setLoading(false);
       }
     });
 
@@ -36,7 +36,7 @@ export default function Avatar() {
               type="text"
               value={displayName}
               readOnly
-              className="w-48 pt-2 pb-2 text-xl text-3xl font-bold text-center bg-transparent border-2 border-b-4 outline-none border-primary lg:text-3xl lg:w-72 md:w-60 md:text-2xl sm:"
+              className="w-48 pt-2 pb-2 text-xl font-bold text-center bg-transparent border-2 border-b-4 outline-none border-primary lg:text-3xl lg:w-72 md:w-60 md:text-2xl sm:"
             />
           )}
         </div>

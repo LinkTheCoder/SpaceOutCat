@@ -88,12 +88,12 @@ export default function Badges() {
   return (
     <>
      <div className="px-6 py-4 text-center">
-  <div className="border-2 border-b-4 pt-2 pb-2 border-primary text-primary font-bold text-3xl mb-2 lg:text-3xl lg:w-72 md:w-60 md:text-2xl sm: w-48 sm: text-xl mx-auto">
+  <div className="border-2 border-b-4 pt-2 pb-2 border-primary text-primary font-bold mb-2 lg:text-3xl lg:w-72 md:w-60 md:text-2xl sm: w-48 text-xl mx-auto">
     Achievements
   </div>
 
   {!loading && (
-    <div className="flex justify-center mx-auto"> {/* Center align images */}
+    <div className="flex justify-center mx-auto">
       <div className="flex">
         <Image
           src={diaryBadgeState ? DiaryBadgeImage : DiaryBadgeImageGray}

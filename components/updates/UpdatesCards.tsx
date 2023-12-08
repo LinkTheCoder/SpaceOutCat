@@ -1,5 +1,4 @@
 import React from 'react';
-import { BsCircleFill } from 'react-icons/bs';
 
 const UpdatesCards = (props) => {
   return (

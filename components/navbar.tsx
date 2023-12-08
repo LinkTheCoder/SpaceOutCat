@@ -9,7 +9,7 @@ import { VscBellDot, VscBell } from 'react-icons/vsc';
 import { auth, firestore } from '../firebaseConfig';
 
 export default function Nav() {
-  const pathname = usePathname(); // Use usePathname to get the current route
+  const pathname = usePathname();
 
   // Conditionally render based on the route
   const shouldRenderNav = pathname !== '/' && pathname !== '/login';
@@ -36,7 +36,7 @@ export default function Nav() {
 
   // Conditionally render the component
   if (!shouldRenderNav) {
-    return null; // Return null if you don't want to render the Nav component
+    return null; // Return null to don't render the Nav component
   }
   
   return (
