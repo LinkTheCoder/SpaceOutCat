@@ -25,3 +25,6 @@
 📨 In-app notification!
 
 📐 Available in portrait & landscape mode!
+
+## Guide
+Visit the project's wiki: [Space Out Cat Wiki](https://github.com/LinkTheCoder/SpaceOutCat/wiki)
