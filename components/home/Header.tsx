@@ -18,12 +18,12 @@ export default function Header() {
   };
 
     return ( 
-      <><div className="sm: m-2 sm: text-center lg:text-left lg:flex grid-rows-2 md: flex grid grid-rows-1 justify-evenly sm:flex grid grid-rows-1">
+      <><div className="m-2 text-center lg:text-left lg:flex lg:grid-rows-2 justify-evenly sm:flex grid grid-rows-1">
         <div>
-          <h1 className="sm: mt-5 lg:mt-20 text-primary text-5xl uppercase font-black">Space Out Cat</h1>
+          <h1 className="mt-5 lg:mt-20 text-primary text-5xl uppercase font-black">Space Out Cat</h1>
           <p className='mt-10 text-lg'>A meowtastic self-care app</p>
   
-          <div className="lg:flex grid-rows-2 md:flex grid-rows-1 justify-evenly text-center sm:flex flex-col">
+          <div className="lg:flex lg:grid-rows-2 md:flex md:grid-rows-1 justify-evenly text-center sm:flex flex-col">
             <div>
   
             <div className="mt-10 flex flex-col sm:flex-row sm:space-x-2">
