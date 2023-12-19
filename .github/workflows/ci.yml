@@ -12,10 +12,10 @@ jobs:
     env:
       NEXT_PUBLIC_FIREBASE_API_KEY: ${{ secrets.NEXT_PUBLIC_FIREBASE_API_KEY }}
 
-    steps:
+   steps:
     - name: 🔄 Checkout repository
       uses: actions/checkout@v2
-        with:
+      with:
         node-version: 18
 
     - name: 🛠️ Setup Node.js
