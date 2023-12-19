@@ -6,6 +6,7 @@
     "dev": "next dev --turbo",
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "test:e2e": "npx playwright test",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
