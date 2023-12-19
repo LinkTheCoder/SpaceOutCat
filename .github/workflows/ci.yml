@@ -19,16 +19,13 @@ jobs:
         node-version: 18  # 🚀 Adjust this to your Node.js version
 
     - name: 📦 Install dependencies
-      run: npm install
-
-    - name: 🌈 Load environment variables
       run: |
-       npm install -g dotenv-cli
-    npx dotenv -e .env.local
+        npm install
+        npm install -g dotenv-cli
+        npx dotenv -e .env.local
 
     - name: 🏗️ Build
       run: npm run build
 
     - name: 🧪 Test
       run: npm test
-
