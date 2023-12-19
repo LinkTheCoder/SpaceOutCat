@@ -1,4 +1,4 @@
-name: 🚀 CI
+name: 🚀 CI/CD
 
 on:
   push:
@@ -16,10 +16,15 @@ jobs:
     - name: 🛠️ Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 18  # 🐢 Adjust this to your Node.js version
+        node-version: 18  # 🚀 Adjust this to your Node.js version
 
     - name: 📦 Install dependencies
       run: npm install
+
+    - name: 🌈 Load environment variables
+      run: |
+        npm install -g dotenv-cli
+        dotenv -e .env.local
 
     - name: 🏗️ Build
       run: npm run build
