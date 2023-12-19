@@ -23,8 +23,8 @@ jobs:
 
     - name: 🌈 Load environment variables
       run: |
-        npm install -g dotenv-cli
-        dotenv -e .env.local
+       npm install -g dotenv-cli
+    npx dotenv -e .env.local
 
     - name: 🏗️ Build
       run: npm run build
