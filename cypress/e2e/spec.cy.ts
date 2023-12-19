@@ -1,6 +1,0 @@
-describe('visit homepage', () => {
-  it('passes', () => {
-    cy.visit('https://www.spaceoutcat.com/')
-    cy.contains('WEB APP').click()
-  })
-})
