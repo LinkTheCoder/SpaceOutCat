@@ -2,7 +2,6 @@ import React from 'react';
 import CatNaut from '../public/img/CatNaut.gif';
 import Image from 'next/image';
 
-//New test
 export default function Header() {
     return ( 
     <div className="mt-5 text-center">
