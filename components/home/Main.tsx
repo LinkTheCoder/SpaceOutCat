@@ -13,7 +13,7 @@ export default function Main() {
     <div className="mt-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
     <CardsImage image={Activities} />
     <CardsRight title='How are you feline? 🐱' 
-    description='Several excercises & tips for your health!'
+    description='Several exercises & tips for your health!'
     list1='🧘 Mindfullnes with timer'
     list2='📝 Anxiety diary'
     list3='📵 SNS detox with day counter'

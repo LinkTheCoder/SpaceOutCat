@@ -9,6 +9,7 @@ export default function Mindfulness() {
   const [text, setText] = useState('');
   const [diaryBadge, setDiaryBadge] = useState(false);
   const [user, setUser] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -31,7 +32,6 @@ export default function Mindfulness() {
         setText(data.text || '');
         setDiaryBadge(data.diaryBadge || false);
       } else {
-        // If the diary entry doesn't exist, set initial values for the diary entry
         await diaryDataRef.set({
           text: '',
           diaryBadge: false,
@@ -39,6 +39,8 @@ export default function Mindfulness() {
       }
     } catch (error) {
       console.error('Error fetching data from Firebase Firestore:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -86,10 +88,8 @@ export default function Mindfulness() {
           value={text}
           onKeyDown={handleKeyDown}
           onChange={handleChange}
-          placeholder=" 😣 Write about your worries. 
-        🤔 Think about how possible is this to happen or what could you do if it does.
-        😌 Try to find small solutions to the problem to make you feel slowly more at ease.
-          "
+          placeholder={isLoading ? "" : " 😣 Write about your worries. \n🤔 Think about how possible is this to happen or what could you do if it does. \n😌 Try to find small solutions to the problem to make you feel slowly more at ease."}
+          disabled={isLoading} // Disable textarea while loading
         />
       </div>
       <div className="mb-16 px-6 pt-4 pb-2 text-center"></div>
