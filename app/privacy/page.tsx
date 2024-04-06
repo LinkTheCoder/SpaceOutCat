@@ -13,6 +13,8 @@ function Privacy() {
       className="block mx-auto lg:max-w-sm sm:max-w-full mt-8" />
       <div className="lg:mx-80 md:mx-48 sm:mx-12">
 
+      <h1 className="mt-5 text-2xl uppercase font-bold text-center text-primary">Privacy policy</h1>
+
         <p className="mt-5 uppercase font-semibold text-center text-gray-400">Data collection</p>
 
         <p className="mt-5 text-center text-gray-400">Space Out Cat collects information from two primary sources, Google (through the OAuth sign-in process) and the application itself.
