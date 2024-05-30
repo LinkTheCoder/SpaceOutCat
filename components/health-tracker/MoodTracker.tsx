@@ -1,4 +1,5 @@
-"use client"
+
+'use client'
 
 import React, { useState, useEffect } from 'react';
 import { auth, firestore } from '../../firebaseConfig.js';
@@ -76,21 +77,20 @@ function MoodTracker() {
   };
 
   if (moods === null) {
-
     return <div className='text-primary'>Loading...</div>;
   }
 
   return (
-    <div className="flex flex-wrap justify-center mt-10">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
       {moods.map((mood, index) => (
-        <div key={index} className="p-4 m-2 border rounded-md w-1/7 border-primary">
+        <div key={index} className="p-4 m-2 border rounded-md border-primary">
           <h3 className="font-bold text-center text-primary">{mood.day}</h3>
           <select
             value={mood.mood}
             onChange={(e) => handleMoodChange(index, e.target.value)}
             className="w-full mt-4 bg-transparent border rounded-md text-primary border-primary focus:outline-none focus:border-violet-400 focus:ring-1 focus:ring-violet-400"
           >
-            <option value="">Select Mood</option>
+            <option value="">Select</option>
             <option value="🙀">🙀</option>
             <option value="😿">😿</option>
             <option value="😾">😾</option>
