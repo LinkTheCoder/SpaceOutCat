@@ -121,18 +121,13 @@ module.exports = {
 
 # Testing 🚧
 
-This project has installed `React Testing Library`, `Jest` & `Playwright`
+This project has installed `React Testing Library`, `Vitest` & `Playwright`
 
 ## Unit & Integration Test
 
 Run all tests in the `test` folder
 ```console
 npm run test
-```
-
-Auto run all tests after every edits in the test files
-```console
-npm run test:watch
 ```
 
 ## E2E
