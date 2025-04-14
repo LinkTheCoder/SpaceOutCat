@@ -2,6 +2,8 @@
 
 <img src="https://i.imgur.com/JjpO3jE.png" width="50%" />
 
+⚙️ Next.js
+
 🚀 A self-care app with space & cat theme!
 
 📲 Available as Web App & downloadable on Google Play!
