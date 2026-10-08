@@ -6,7 +6,7 @@
 
 🚀 A self-care app with space & cat theme!
 
-📲 Available as Web App & downloadable on Google Play!
+📲 Available as Web App & downloadable on Google Play (retired)!
 
 🌐 Login using Google & save your data!
 
